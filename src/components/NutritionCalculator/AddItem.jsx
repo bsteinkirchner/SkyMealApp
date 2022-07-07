@@ -2,7 +2,7 @@ import React from "react";
 
 function AddItem({ addItem, name, updateName, calories, updateCalories, protein, updateProtein, carbs, updateCarbs, fat, updateFat }) {
   return (
-    <form onSubmit={addItem}>
+    <form id="addfood" onSubmit={addItem}>
       <div className="form-inner">
 
         <div className="form-input">

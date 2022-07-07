@@ -5,31 +5,34 @@ import { NavLink } from "react-router-dom";
 
 function Categories() {
   return (
-    <List>
-        <SLink to={'/diet/ketogenic'}>
-            <FaCheese/>
-            <h4>Keto</h4>
-        </SLink>
-        <SLink to={'/diet/gluten-free'}>
-            <FaBreadSlice/>
-            <h4>Gluten-free</h4>
-        </SLink>
-        <SLink to={'/diet/paleo'}>
-            <FaFish/>
-            <h4>Paleo</h4>
-        </SLink>
-        <SLink to={'/diet/vegan'}>
-            <FaLeaf/>
-            <h4>Vegan</h4>
-        </SLink>
-    </List>
+    <div>
+        <h2>Filter by diet</h2>
+        <List>
+            <SLink to={'/diet/ketogenic'}>
+                <FaCheese/>
+                <h4>Keto</h4>
+            </SLink>
+            <SLink to={'/diet/gluten-free'}>
+                <FaBreadSlice/>
+                <h4>Gluten-free</h4>
+            </SLink>
+            <SLink to={'/diet/paleo'}>
+                <FaFish/>
+                <h4>Paleo</h4>
+            </SLink>
+            <SLink to={'/diet/vegan'}>
+                <FaLeaf/>
+                <h4>Vegan</h4>
+            </SLink>
+        </List>
+    </div>
   )
 }
 
 const List = styled.div`
     display flex;
     justify-content: center;
-    margin: 2rem 0rem;
+    margin: 0rem;
 `;
 
 const SLink = styled(NavLink)`

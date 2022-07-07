@@ -37,7 +37,7 @@ function NutritionItem({ itemProp, calories, setCalories, protein, setProtein, c
   return (
     <div
       className={
-        'item ' +
+        'fooditem ' +
         (clicked ? 'item-active' : 'item-inactive')
       }
       >

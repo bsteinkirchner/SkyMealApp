@@ -88,7 +88,7 @@ function Nutrition() {
         </ul>
       </div>
 
-      <div id="items">
+      <div id="fooditems">
         { items.length >= 1 ?
             items.map(item => (
               <NutritionItem
