@@ -5,6 +5,7 @@ import Searched from "./Searched";
 import Recipe from "./Recipe";
 import Nutrition from './Nutrition';
 import GroceryList from './GroceryList';
+import SearchByIngredients from './SearchByIngredients';
 import { Route, Routes } from "react-router-dom";
 
 function Pages() {
@@ -16,6 +17,7 @@ function Pages() {
         <Route path ="/recipe/:name" element={<Recipe/>} />
         <Route path ="/Nutrition" element={<Nutrition />}/>
         <Route path ="/GroceryList" element={<GroceryList />} />
+        <Route path ="/SearchByIngredients/:name" element={<SearchByIngredients/>}/>
       </Routes>
   );
 }

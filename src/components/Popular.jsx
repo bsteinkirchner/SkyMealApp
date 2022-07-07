@@ -31,7 +31,7 @@ function Popular() {
     return (
         <div>
             <Wrapper>
-                <h3>Trending Recipes</h3>
+                <h2>Trending Recipes</h2>
                 <Splide options={{
                     perPage: 4,
                     arrows: false,
@@ -61,6 +61,9 @@ function Popular() {
 
 const Wrapper = styled.div`
     margin: 4rem 0rem;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #e7e5e5;
 `;
 
 const Card = styled.div`
@@ -68,7 +71,7 @@ const Card = styled.div`
     border-radius: 2rem;
     overflow: hidden;
     position: relative;
-
+    padding-top: 15px;
     img{
         border-radius: 2rem;
         position: absolute;
