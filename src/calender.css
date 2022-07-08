@@ -4,10 +4,10 @@
     min-height: 700px;
     background-color: paleturquoise;
     margin: 0;
-    padding: 20px;
+    padding: 40px;
     width: 100%;
-  }
-  .icon {
+}
+.icon {
     font-family: "Material Icons", serif;
     font-style: normal;
     display: inline-block;
@@ -42,15 +42,6 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 1.5;
-    color: var(--text-color);
-    background: var(--bg-color);
-    position: relative;
-  }
   
   header {
     display: block;
@@ -82,7 +73,7 @@
   
   .row {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -162,7 +153,7 @@
   
   .calendar .body .cell {
     position: relative;
-    height: 4em;
+    height: 10rem;
     border-right: 1px solid var(--border-color);
     overflow: hidden;
     cursor: pointer;

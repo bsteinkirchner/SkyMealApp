@@ -13,9 +13,7 @@ function MealPlan() {
 
   return (
     <div className="calendar">
-      <h1>Week View Calendar with react</h1>
-      <br />
-      <h2>Example</h2>
+      <h1>Weekly Meal Calendar</h1>
       <Calendar showDetailsHandle={showDetailsHandle} />
       <br />
       {showDetails && <Details data={data} />}
