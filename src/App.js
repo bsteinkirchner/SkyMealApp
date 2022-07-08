@@ -3,6 +3,7 @@ import { SkynetClient, genKeyPairFromSeed } from 'skynet-js';
 import Nav from "./components/Nav/Nav";
 import Search from "./components/Search";
 import Pages from "./pages/Pages";
+import "./calender.css";
 import { BrowserRouter } from "react-router-dom";
 
 const client = new SkynetClient();

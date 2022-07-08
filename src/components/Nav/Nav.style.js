@@ -47,7 +47,8 @@ export const NavbarLink = styled(Link)`
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  margin: 10px;
+  margin: 5px;
+  padding:20px;
   font-weight:bold;
 
   @media (max-width: 700px) {

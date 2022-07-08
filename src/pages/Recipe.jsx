@@ -21,6 +21,7 @@ function Recipe() {
       <div>
         <h2>{details.title}</h2>
         <img src={details.image} alt=""/>
+        <p>{details.calories}</p>
       </div>
       <Info>
         <Button

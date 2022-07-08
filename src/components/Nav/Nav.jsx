@@ -23,6 +23,7 @@ function Nav() {
             <NavbarLink to="/"> Home</NavbarLink>
             <NavbarLink to="/Nutrition">Nutrition Calculator</NavbarLink>
             <NavbarLink to="/GroceryList">Grocery List</NavbarLink>
+            <NavbarLink to="/MealPlan">Weekly Meal Plan</NavbarLink>
             <OpenLinksButton
               onClick={() => {
                 setExtendNavbar((curr) => !curr);
