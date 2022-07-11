@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import styled from "styled-components";
 import {FaCheckCircle, FaCircle, FaChevronLeft, FaChevronRight, FaPlus} from 'react-icons/fa'
 
 const List = () => {
@@ -64,10 +65,10 @@ const List = () => {
 	return (
 		<div className='app-background'>
 			<div className='main-container'>
-				<div className='add-item-box'>
+				<ItemBox>
 					<input value={inputValue} onChange={(event) => setInputValue(event.target.value)} className='add-item-input' placeholder='Add an item...' />
-					<FaPlus onClick={() => handleAddButtonClick()} />
-				</div>
+					<FaPlus onClick={() => handleAddButtonClick()} className="plus"/>
+				</ItemBox>
 				<div className='item-list'>
 					{items.map((item, index) => (
 						<div className='item-container'>
@@ -102,4 +103,16 @@ const List = () => {
 	);
 };
 
+const ItemBox = styled.div`
+	display: flex;
+	width: 50%;
+	margin: auto;
+	justify-content: center;
+	padding-top: 15px;
+	align-items: center;
+	input {
+		background-color: #e7e5e5;
+		border-radius: 1rem;
+	}
+`;
 export default List;

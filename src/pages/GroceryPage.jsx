@@ -3,7 +3,10 @@ import List from "../components/Grocery/List";
 
 function GroceryPage() {
   return (
-    <div>hello</div>
+    <div>
+      <h2>Shopping List</h2>
+      <List/>
+    </div>
   )
 }
 
