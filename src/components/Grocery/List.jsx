@@ -63,7 +63,7 @@ const List = () => {
 	};
 
 	return (
-		<div className='app-background'>
+		<div className='list-con'>
 			<div className='main-container'>
 				<ItemBox>
 					<input value={inputValue} onChange={(event) => setInputValue(event.target.value)} className='add-item-input' placeholder='Add an item...' />
@@ -75,12 +75,12 @@ const List = () => {
 							<div className='item-name' onClick={() => toggleComplete(index)}>
 								{item.isSelected ? (
 									<>
-										<FaCheckCircle />
+										<FaCheckCircle className="icon"/>
 										<span className='completed'>{item.itemName}</span>
 									</>
 								) : (
 									<>
-										<FaCircle />
+										<FaCircle className="icon"/>
 										<span>{item.itemName}</span>
 									</>
 								)}
