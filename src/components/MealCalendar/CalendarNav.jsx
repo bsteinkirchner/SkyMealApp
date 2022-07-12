@@ -1,8 +1,7 @@
 import React from 'react';
 import { Nav, NavList, NLink, NavItem, NavThumb, NavLabel, Section } from "./Calendar.style";
-import Days from "./Days";
 
-function Calendar() {
+function CalendarNav() {
   
   return (
     <div>
@@ -52,9 +51,8 @@ function Calendar() {
           </NavItem>
         </NavList>
       </Nav>
-      <Days/>
   </div>
   )
 }
 
-export default Calendar;
+export default CalendarNav;

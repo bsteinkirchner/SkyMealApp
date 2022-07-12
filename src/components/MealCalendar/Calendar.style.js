@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
     will-change: transform;
-    position: fixed;
+    position: relative;
+    margin-top: 155px;
     left: 0;
-    margin-top: 5%;
     width: 100%;
     z-index: 1;
     background: #1a1a1a;
@@ -34,6 +34,10 @@ export const NavItem = styled.li`
 `;
 export const NLink = styled(Link)`
     color: white;
+    &:active {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 `;
 export const NavThumb = styled.div`
     display: block;
@@ -70,22 +74,7 @@ export const NavLabel = styled.p`
         font-size: 14px;
     }
 `;
-export const Section = styled.section`
-    will-change: transform;
-    transition: transform 0.3s;
-    transform: scale(1.5);
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    background: #fff;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -webkit-transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-    transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-`;
+
+
+
+
