@@ -1,14 +1,11 @@
 import React from 'react';
 import CalendarNav from "../components/MealCalendar/CalendarNav";
-import WeekCalendar from '../components/MealCalendar/WeekCalendar';
-import styled from "styled-components"
-;
-
+import CalendarBody from '../components/MealCalendar/CalendarBody';
 function MealPlan() {
   return (
     <div>
       <CalendarNav />
-      <WeekCalendar/>
+      <CalendarBody />
     </div>
   )
 }

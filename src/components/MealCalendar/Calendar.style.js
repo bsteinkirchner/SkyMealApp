@@ -5,6 +5,7 @@ export const Nav = styled.nav`
     will-change: transform;
     position: relative;
     margin-top: 155px;
+    margin-bottom: -130px;
     left: 0;
     width: 100%;
     z-index: 1;
