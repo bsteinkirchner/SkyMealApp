@@ -9,7 +9,7 @@ export const NavbarContainer = styled.nav`
   flex-direction: column;
 
   @media (min-width: 700px) {
-    height: 80px;
+    height: 50px;
   }
 `;
 export const NavLogo = styled.h1`
@@ -22,7 +22,7 @@ export const LeftContainer = styled.div`
   flex: 70%;
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  padding-left: 5px;
 `;
 
 export const RightContainer = styled.div`
@@ -44,24 +44,29 @@ export const NavbarLinkContainer = styled.div`
 
 export const NavbarLink = styled(Link)`
   color: white;
-  font-size: x-large;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
   text-decoration: none;
-  margin: 5px;
+  font-weight: bold;
   padding:20px;
-  font-weight:bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
 
   @media (max-width: 700px) {
     display: none;
+  }
+
+  &:hover {
+    color: #26c485;
   }
 `;
 
 export const NavbarLinkExtended = styled(Link)`
   color: white;
   font-size: x-large;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   margin: 10px;
+  
 `;
 
 export const OpenLinksButton = styled.button`

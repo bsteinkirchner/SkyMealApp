@@ -4,7 +4,7 @@ import List from "../components/Grocery/List";
 function GroceryPage() {
   return (
     <div>
-      <h2>Shopping List</h2>
+      <h1>Shopping List</h1>
       <List/>
     </div>
   )
