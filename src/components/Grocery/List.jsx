@@ -65,11 +65,13 @@ const List = () => {
 	return (
 		<div className='list-con'>
 			<div className='main-container'>
+				<ItemP>Click the plus sign to add an item to your list.</ItemP>
 				<ItemBox>
 					<input value={inputValue} onChange={(event) => setInputValue(event.target.value)} className='add-item-input' placeholder='Add an item...' />
 					<FaPlus onClick={() => handleAddButtonClick()} className="plus"/>
 				</ItemBox>
-				<div className='item-list'>
+				<ListHead>Your List</ListHead>
+				<div className="item-list">
 					{items.map((item, index) => (
 						<div className='item-container'>
 							<div className='item-name' onClick={() => toggleComplete(index)}>
@@ -113,6 +115,22 @@ const ItemBox = styled.div`
 	input {
 		background-color: #e7e5e5;
 		border-radius: 1rem;
+		height: 50px;
+		margin-top: 2px;
+		margin-bottom: 10px;
 	}
 `;
+const ItemP = styled.p`
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+`;
+const ListHead = styled.h2`
+	font-size: 30px;
+	justify-content: start;
+	display: flex;
+	margin-left: 50px;
+`;	
+
 export default List;
