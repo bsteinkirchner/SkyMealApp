@@ -23,6 +23,7 @@ export const NavList = styled.ul`
     color:white; 
     list-style: none;
     text-decoration: none;
+    margin-left: -30px;
 `;
 export const NavItem = styled.li`
     -webkit-box-flex: 1;
