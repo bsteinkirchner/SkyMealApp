@@ -2,11 +2,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
-  width: 100%
+  width: 100%;
   height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
   background-color: black;
+  position: absolute;
+  z-index: 1;
   display: flex;
   flex-direction: column;
+  margin-bottom: -51px;
 
   @media (min-width: 700px) {
     height: 50px;
@@ -66,7 +69,6 @@ export const NavbarLinkExtended = styled(Link)`
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   margin: 10px;
-  
 `;
 
 export const OpenLinksButton = styled.button`

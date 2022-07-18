@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 function Categories() {
   return (
     <div>
-        <h2>Filter by diet</h2>
+        <Filter>Filter by diet</Filter>
         <List>
             <SLink to={'/diet/ketogenic'}>
                 <FaCheese/>
@@ -28,6 +28,11 @@ function Categories() {
     </div>
   )
 }
+
+const Filter = styled.h2`
+    color: white;
+    font-weight: 600;
+`;
 
 const List = styled.div`
     display flex;

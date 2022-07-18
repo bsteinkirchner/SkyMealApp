@@ -29,7 +29,6 @@ function Popular() {
         }
     };
     return (
-        <div>
             <Wrapper>
                 <h2>Trending Recipes</h2>
                 <Splide options={{
@@ -55,15 +54,14 @@ function Popular() {
                         })}
                 </Splide>
             </Wrapper>
-        </div>
     );
 }
 
 const Wrapper = styled.div`
-    margin: 4rem 0rem;
+    margin-top: 2rem;
     padding-top: 20px;
     padding-bottom: 30px;
-    background-color: #e7e5e5;
+    background: rgba(255, 255, 255, .8);
 `;
 
 const Card = styled.div`
