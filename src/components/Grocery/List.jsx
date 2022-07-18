@@ -74,7 +74,7 @@ const List = () => {
 				<div className="item-list">
 					{items.map((item, index) => (
 						<div className='item-container'>
-							<div className='item-name' onClick={() => toggleComplete(index)}>
+							<div className='item-name' key={item.itemName} onClick={() => toggleComplete(index)}>
 								{item.isSelected ? (
 									<>
 										<FaCheckCircle className="icon"/>
