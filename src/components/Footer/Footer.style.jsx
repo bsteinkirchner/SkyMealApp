@@ -6,3 +6,7 @@ export const FooterContainer = styled.div`
     margin-top: 10rem;
     background-color: black;
 `;
+
+export const FooterList = styled.ul`
+
+`
