@@ -17,8 +17,7 @@ function MealPlan() {
 
 const MealHead = styled.h1`
   font-size: 50px;
-  margin-top: 25px;
-  padding: 10px;
+  padding-top: 100px;
 `
 const DateHead = styled.h2`
   display: flex;

@@ -33,7 +33,8 @@ function Diet() {
   );
 }
 
-const Grid = styled.div`
+const Grid = styled.div` 
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;

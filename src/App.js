@@ -3,6 +3,7 @@ import Nav from "./components/Nav/Nav";
 import Pages from "./pages/Pages";
 import "./index.scss"
 import { HashRouter } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <HashRouter>
         <Nav />
         <Pages />
+        <Footer />
       </HashRouter>
     </div>
   );

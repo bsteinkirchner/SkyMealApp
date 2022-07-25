@@ -12,7 +12,7 @@ function GroceryPage() {
 }
 const ListHead = styled.h1`
   font-size: 50px;
-  margin-top: 25px;
-  padding: 10px;
-`
+  padding-top: 150px;
+`;
+
 export default GroceryPage;

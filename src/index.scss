@@ -53,8 +53,9 @@ a {
 main {
     width: 100%;
     max-width: 50%;
+    padding-bottom: 300px;
+    padding-top: 100px;
     margin: 0 auto;
-  padding-bottom: 40px;
 
     @media screen and (max-width: 1920px) {
         max-width: 60%;

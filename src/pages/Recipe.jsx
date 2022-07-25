@@ -53,8 +53,10 @@ function Recipe() {
 }
 
 const DetailWrapper = styled.div`
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
   display: flex;
   .active{
     background: linear-gradient(35deg, #494949, #313131);
